@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DERMIQT - Care Beyond Boundaries</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#3D2621] text-[#F7F2ED] min-h-screen selection:bg-[#E5BE4A] selection:text-[#3D2621]">
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-6 py-6">
+
+        <!-- Navigation Bar -->
+        <header class="flex items-center justify-between py-4 border-b border-[#543831]">
+            <div class="flex items-center space-x-10">
+                <button class="flex items-center space-x-2 text-xs uppercase tracking-widest font-semibold hover:text-[#E5BE4A] transition">
+                    <span>&#9776; MENU</span>
+                </button>
+                <nav class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-medium text-[#D0C2BC]">
+                    <a href="#" class="hover:text-white transition">Products</a>
+                    <a href="#" class="hover:text-white transition">About</a>
+                </nav>
+            </div>
+
+            <!-- Logo -->
+            <div class="text-xl font-bold tracking-widest text-white">
+                DERMIQT
+            </div>
+
+            <div class="flex items-center space-x-8">
+                <nav class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-medium text-[#D0C2BC]">
+                    <a href="#" class="hover:text-white transition">Reviews</a>
+                    <a href="#" class="hover:text-white transition">Blog</a>
+                </nav>
+                <a href="#" class="bg-[#E5BE4A] text-[#3D2621] px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-yellow-400 transition shadow-md">
+                    Shop Now
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-16 pb-24">
+            
+            <!-- Left Column: Title & Subtitle -->
+            <div class="lg:col-span-5 space-y-8 z-10">
+                <div class="text-xs uppercase tracking-widest text-[#D0C2BC] flex items-center space-x-2">
+                    <span class="w-2 h-2 rounded-full bg-[#E5BE4A]"></span>
+                    <span>Care your skin naturally</span>
+                </div>
+
+                <h1 class="text-5xl lg:text-6xl font-light tracking-tight leading-[1.1]">
+                    Care Beyond <br>
+                    <span class="font-normal">Boundaries</span>
+                </h1>
+
+                <!-- Floating badge / element reference -->
+                <div class="flex items-center space-x-4 pt-4">
+                    <div class="w-12 h-12 bg-[#4D332D] rounded-full flex items-center justify-center border border-[#63453E]">
+                        <span class="text-xl">🥑</span>
+                    </div>
+                    <div class="text-xs uppercase tracking-wider text-[#D0C2BC]">
+                        <p class="font-bold text-white">Clear Extra Oil</p>
+                        <p>Preserve the youth</p>
+                    </div>
+                </div>
+
+                <div class="pt-8 border-t border-[#543831] flex items-center space-x-6">
+                    <div>
+                        <h2 class="text-3xl font-light text-[#E5BE4A]">100%</h2>
+                        <p class="text-xs uppercase tracking-widest text-[#D0C2BC]">Organic</p>
+                    </div>
+                    <p class="text-xs text-[#D0C2BC] max-w-[180px]">
+                        Let your skin glow the natural way.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Center Column: Oval Image Feature & Floating CTA -->
+            <div class="lg:col-span-4 relative flex justify-center">
+                <!-- Circular/Oval Masked Image -->
+                <div class="relative w-[280px] h-[400px] lg:w-[320px] lg:h-[450px] rounded-full overflow-hidden border-4 border-[#543831] shadow-2xl bg-[#543831]">
+                    <!-- Replace with your actual image path -->
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=600" 
+                         alt="Man washing face" 
+                         class="w-full h-full object-cover filter brightness-90 contrast-105">
+                </div>
+
+                <!-- Floating Yellow "Shop Now" Circular Badge -->
+                <div class="absolute -left-6 bottom-16 bg-[#E5BE4A] text-[#3D2621] w-24 h-24 rounded-full flex flex-col items-center justify-center text-center shadow-xl cursor-pointer hover:scale-105 transition">
+                    <span class="text-[10px] font-bold uppercase tracking-wider">Shop</span>
+                    <span class="text-[10px] font-bold uppercase tracking-wider">Now</span>
+                    <span class="text-xs">&#8595;</span>
+                </div>
+            </div>
+
+            <!-- Right Column: Secondary Info & Natural Growth -->
+            <div class="lg:col-span-3 space-y-6 lg:pl-4">
+                <div class="flex items-center space-x-2 text-xs uppercase tracking-wider text-[#D0C2BC]">
+                    <span>🌿</span>
+                    <span>Natural Growth</span>
+                </div>
+                
+                <h3 class="text-2xl font-light leading-snug">
+                    Bold Skin <br>Begins with <br>Balance
+                </h3>
+
+                <p class="text-xs text-[#D0C2BC] leading-relaxed">
+                    Natural facial skincare must be in every beauty routine to sustain long-term glow.
+                </p>
+
+                <!-- Badge aesthetic match -->
+                <div class="pt-6">
+                    <div class="inline-flex items-center space-x-3 bg-[#4D332D] px-4 py-2 rounded-full border border-[#63453E]">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        <span class="text-[10px] uppercase tracking-wider text-[#D0C2BC]">Product for Beauty</span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

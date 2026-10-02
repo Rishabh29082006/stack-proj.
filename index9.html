@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpFound - Legacy Bank Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #03150e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .bg-glow {
+            background: radial-gradient(circle at 50% 40%, rgba(16, 185, 129, 0.15) 0%, rgba(3, 21, 14, 0.9) 70%);
+        }
+        .glass-panel {
+            background: rgba(10, 35, 25, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+        .btn-glow {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-glow min-h-screen flex flex-col justify-between relative">
+
+    <!-- Navbar -->
+    <header class="w-full px-8 py-6 flex items-center justify-between z-20">
+        <div class="flex items-center space-x-2">
+            <div class="w-7 h-7 bg-emerald-500 rounded flex items-center justify-center font-bold text-black text-sm">▲</div>
+            <span class="font-bold text-lg tracking-wide">UpFound</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8 text-sm text-emerald-100/80 glass-panel px-6 py-2 rounded-full">
+            <a href="#" class="text-white font-medium hover:text-emerald-400 transition">Home</a>
+            <a href="#" class="hover:text-emerald-400 transition">About</a>
+            <a href="#" class="hover:text-emerald-400 transition flex items-center gap-1">Services <i class="fa-solid fa-chevron-down text-xs"></i></a>
+            <a href="#" class="hover:text-emerald-400 transition">Pricing</a>
+            <a href="#" class="hover:text-emerald-400 transition">Solution</a>
+            <a href="#" class="hover:text-emerald-400 transition flex items-center gap-1"><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-chevron-down text-xs"></i></a>
+        </nav>
+        <div>
+            <a href="#" class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-2.5 rounded-full text-sm btn-glow transition">Login / Register</a>
+        </div>
+    </header>
+
+    <!-- Background Giant Text -->
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
+        <h1 class="text-[12vw] font-extrabold tracking-wider uppercase text-emerald-950/40 whitespace-nowrap">
+            Legacy Bank
+        </h1>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="relative z-10 px-8 md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto py-12">
+        
+        <!-- Left Column: Text & CTA -->
+        <div class="lg:col-span-4 space-y-6">
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight uppercase leading-tight text-white">
+                Fuel for <br><span class="text-emerald-400">Startups</span>
+            </h2>
+            <p class="text-emerald-200/70 text-sm leading-relaxed max-w-sm">
+                Strategic guidance, funding support, and growth acceleration for early-stage ventures.
+            </p>
+            <div class="flex items-center gap-4 pt-2">
+                <a href="#" class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full text-sm btn-glow transition shadow-lg">Get Started</a>
+                <a href="#" class="glass-panel hover:bg-emerald-900/40 text-white font-medium px-6 py-3 rounded-full text-sm transition border border-emerald-500/30">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Center Column: 3D Visual Simulation -->
+        <div class="lg:col-span-5 flex flex-col items-center justify-center relative min-h-[350px]">
+            <div class="absolute -top-6 left-10 w-12 h-12 rounded-full bg-emerald-400/30 blur-xl"></div>
+            
+            <div class="relative z-10 flex flex-col items-center">
+                <!-- Glowing Green Card Simulation -->
+                <div class="w-64 h-40 rounded-2xl glass-panel p-5 transform -rotate-6 hover:rotate-0 transition duration-500 shadow-2xl border border-emerald-400/40 bg-gradient-to-br from-emerald-600/40 via-emerald-900/60 to-black relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-400/20 rounded-full blur-2xl"></div>
+                    <div class="flex justify-between items-center mb-8">
+                        <div class="w-8 h-6 bg-amber-300/80 rounded-md border border-amber-500/50"></div>
+                        <i class="fa-solid fa-wifi text-emerald-300/80 rotate-90"></i>
+                    </div>
+                    <div class="text-xs text-emerald-200/70 tracking-widest uppercase">Legacy Card</div>
+                    <div class="text-sm font-mono font-bold tracking-wider mt-1 text-white">•••• •••• •••• 8824</div>
+                </div>
+
+                <!-- Pedestal block -->
+                <div class="w-32 h-20 bg-gradient-to-b from-emerald-500/30 to-emerald-900/50 border border-emerald-400/40 mt-4 rounded-lg flex items-center justify-center shadow-inner">
+                    <div class="w-16 h-10 border border-emerald-400/30 rounded bg-emerald-950/60"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Stats Card -->
+        <div class="lg:col-span-3 flex justify-end">
+            <div class="glass-panel p-5 rounded-2xl w-full max-w-xs space-y-4 border border-emerald-500/35 shadow-xl">
+                <div class="flex justify-between items-center text-xs text-emerald-300 font-medium">
+                    <span>Launching Startups</span>
+                    <i class="fa-solid fa-arrow-trend-up text-emerald-400"></i>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="space-y-1 text-xs text-emerald-200/70">
+                        <div>83% Success Rate</div>
+                        <div class="text-emerald-400/60">17% Failure Rate</div>
+                    </div>
+                    <!-- Circular Progress simulation -->
+                    <div class="relative w-16 h-16 flex items-center justify-center rounded-full border-4 border-emerald-900 border-t-emerald-400">
+                        <span class="text-xs font-bold text-white">86%</span>
+                    </div>
+                </div>
+                <div class="text-[11px] text-emerald-400 font-medium flex items-center gap-1">
+                    <i class="fa-solid fa-plus"></i> 4.52% <span class="text-emerald-200/60">vs last month</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Right Sidebar Social Icons -->
+    <div class="absolute right-6 top-1/2 -translate-y-1/2 hidden md:flex flex-col space-y-4 z-20">
+        <a href="#" class="w-8 h-8 rounded-full glass-panel flex items-center justify-center text-emerald-300 hover:text-white hover:bg-emerald-800/50 transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+        <a href="#" class="w-8 h-8 rounded-full glass-panel flex items-center justify-center text-emerald-300 hover:text-white hover:bg-emerald-800/50 transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+        <a href="#" class="w-8 h-8 rounded-full glass-panel flex items-center justify-center text-emerald-300 hover:text-white hover:bg-emerald-800/50 transition"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+    </div>
+
+    <!-- Footer / Scroll indicator -->
+    <footer class="w-full pb-6 text-center z-20">
+        <div class="inline-flex flex-col items-center cursor-pointer text-emerald-300/70 hover:text-white transition">
+            <span class="text-xs tracking-wider mb-1">Scroll to explore more</span>
+            <i class="fa-solid fa-chevron-down text-xs animate-bounce"></i>
+        </div>
+    </footer>
+
+</body>
+</html>

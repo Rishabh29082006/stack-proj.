@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobFine - Find Your Ideal Job</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: '#00B074',
+                        brandDark: '#0A3335',
+                        brandLightBg: '#F8F9FA',
+                        brandPurple: '#EAE6FF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <div class="bg-brandGreen text-white p-2 rounded-lg font-bold flex items-center justify-center w-8 h-8">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <span class="text-xl font-bold tracking-tight text-gray-900">JobFine</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+            <a href="#" class="hover:text-brandGreen transition">Platform</a>
+            <a href="#" class="hover:text-brandGreen transition">Solution</a>
+            <a href="#" class="hover:text-brandGreen transition">Resources</a>
+            <a href="#" class="hover:text-brandGreen transition">Company</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div>
+            <a href="#" class="bg-brandGreen hover:bg-emerald-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md transition">
+                Book A Demo
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative max-w-7xl mx-auto px-6 pt-12 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Content & Search -->
+        <div class="lg:col-span-6 z-10">
+            <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                Find Your <br>Ideal Job
+            </h1>
+            <p class="text-gray-500 text-base max-w-md mb-8 leading-relaxed">
+                The digital marketing solution provider for Ford Dealers and Lincoln Retailers turned to the DataRobot.
+            </p>
+
+            <!-- Search Bar -->
+            <div class="bg-white p-2 rounded-full shadow-lg border border-gray-100 flex items-center max-w-lg mb-12">
+                <div class="pl-4 text-gray-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                </div>
+                <input type="text" placeholder="Search job" class="w-full px-4 py-2 text-sm focus:outline-none text-gray-700">
+                <button class="bg-brandGreen hover:bg-emerald-600 text-white text-sm font-medium px-8 py-3 rounded-full transition shadow-sm">
+                    Search
+                </button>
+            </div>
+
+            <!-- Bottom Feature Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg">
+                <!-- Matches Card -->
+                <div class="bg-brandPurple p-5 rounded-2xl flex flex-col justify-between">
+                    <span class="text-3xl font-extrabold text-gray-900">8M+</span>
+                    <span class="text-xs font-semibold text-gray-600 mt-1">Matches Made</span>
+                </div>
+
+                <!-- Potential Card -->
+                <div class="bg-gray-50 border border-gray-100 p-5 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-sm font-bold text-gray-900">Unlocking your potential</h4>
+                        <p class="text-xs text-gray-500 mt-1">Here to help with our logistics</p>
+                    </div>
+                    <a href="#" class="text-xs font-semibold text-brandGreen hover:underline mt-3 inline-flex items-center">
+                        Browse All Categories <span class="ml-1">↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Image & Overlays -->
+        <div class="lg:col-span-6 relative">
+            <!-- Background Curved Shape / Dark Panel Container -->
+            <div class="absolute inset-0 bg-brandDark rounded-3xl overflow-hidden shadow-xl flex items-end justify-end">
+                <!-- Pattern Dots -->
+                <div class="absolute bottom-6 right-6 grid grid-cols-5 gap-2 opacity-30">
+                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div><div class="w-1.5 h-1.5 bg-white rounded-full"></div><div class="w-1.5 h-1.5 bg-white rounded-full"></div><div class="w-1.5 h-1.5 bg-white rounded-full"></div><div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div><div class="w-1.5 h-1.5 bg-white rounded-full"></div><div class="w-1.5 h-1.5 bg-white rounded-full"></div><div class="w-1.5 h-1.5 bg-white rounded-full"></div><div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                </div>
+            </div>
+
+            <!-- Main Image Wrapper -->
+            <div class="relative z-10 p-6 flex justify-center items-center">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Professional woman with laptop and coffee" class="rounded-2xl object-cover max-h-[450px] shadow-2xl">
+            </div>
+
+            <!-- Floating Widget 1: Job Alert Subscribe -->
+            <div class="absolute top-12 left-0 bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-full shadow-lg flex items-center space-x-2 z-20 text-xs font-medium border border-gray-100">
+                <span class="text-amber-500">🔔</span>
+                <span>Job Alert Subscribe</span>
+            </div>
+
+            <!-- Floating Widget 2: Talent Search Box -->
+            <div class="absolute top-10 right-4 bg-white p-4 rounded-2xl shadow-xl z-20 w-56 border border-gray-100 hidden sm:block">
+                <div class="text-[10px] text-gray-400 font-semibold mb-1">Type of Work</div>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg h-7 mb-2"></div>
+                <div class="text-[10px] text-gray-400 font-semibold mb-1">Position</div>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg h-7 mb-3"></div>
+                <button class="w-full bg-brandGreen text-white text-xs font-semibold py-2 rounded-lg shadow-sm">Search Talent</button>
+            </div>
+
+            <!-- Floating Widget 3: Candidates get job -->
+            <div class="absolute bottom-10 left-4 bg-white px-4 py-3 rounded-2xl shadow-xl z-20 flex items-center space-x-3 border border-gray-100">
+                <div class="flex -space-x-2 overflow-hidden">
+                    <inline-block class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-gray-300"></inline-block>
+                    <inline-block class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-gray-400"></inline-block>
+                    <inline-block class="inline-block h-6 w-6 rounded-full ring-2 ring-white bg-gray-500"></inline-block>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-gray-900">5k+ candidates get job</p>
+                </div>
+                <div class="bg-brandGreen text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">+</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Partner Logos Footer Section -->
+    <div class="border-t border-gray-100 py-10 mt-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-around gap-8 opacity-60 grayscale hover:grayscale-0 transition duration-300">
+            <span class="font-bold text-xl tracking-tighter text-gray-700">aws</span>
+            <span class="font-bold text-lg text-gray-700 flex items-center">Walmart <span class="text-xs ml-0.5">✦</span></span>
+            <span class="font-black text-xl tracking-wider text-gray-700">HBO</span>
+            <span class="font-serif font-bold text-lg text-gray-700">Vanguard</span>
+            <span class="font-serif font-bold text-xl uppercase tracking-widest text-gray-700">TIME</span>
+            <span class="font-bold text-md tracking-widest border border-gray-400 px-2 py-0.5 text-gray-700">LEVI'S</span>
+        </div>
+    </div>
+
+</body>
+</html>

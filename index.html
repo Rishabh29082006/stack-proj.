@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinionated About Dining Clone</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    
+    <!-- Navbar -->
+    <header class="flex justify-between items-center px-8 py-4 border-b border-gray-200">
+        <div class="text-xl font-bold tracking-wider">OAD</div>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+            <a href="#" class="hover:text-black">Explore</a>
+            <a href="#" class="hover:text-black">Dining Guides</a>
+            <a href="#" class="hover:text-black">Top Reviewers</a>
+            <a href="#" class="hover:text-black">Travel with OAD</a>
+            <a href="#" class="hover:text-black">Magazine</a>
+        </nav>
+        <button class="bg-black text-white px-4 py-2 text-sm rounded hover:bg-gray-800">Make a review</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="px-8 py-16 text-center max-w-5xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-serif mb-6">Opinionated About Dining</h1>
+        <p class="text-gray-600 max-w-xl mx-auto mb-10">OAD is where people reviews counts. With over 400,000 reviews by more than 10,000 people we are lovers of good cuisine.</p>
+        
+        <!-- Thumbnail Row with Background Images -->
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-4 mt-8">
+            <div class="relative h-32 rounded overflow-hidden flex flex-col justify-end p-3 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=300&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="relative z-10"><p class="font-bold text-xs">Desde 1911</p><p class="text-gray-300 text-[10px]">Madrid, Spain</p></div>
+            </div>
+            <div class="relative h-32 rounded overflow-hidden flex flex-col justify-end p-3 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=300&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="relative z-10"><p class="font-bold text-xs">Nick Honey</p><p class="text-gray-300 text-[10px]">Le Petit Leon</p></div>
+            </div>
+            <div class="relative h-32 rounded overflow-hidden flex flex-col justify-end p-3 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=300&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="relative z-10"><p class="font-bold text-xs">Rome</p><p class="text-gray-300 text-[10px]">140 restaurants</p></div>
+            </div>
+            <div class="relative h-32 rounded overflow-hidden flex flex-col justify-end p-3 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="relative z-10"><p class="font-bold text-xs">Cracco</p><p class="text-gray-300 text-[10px]">Rome, Italy</p></div>
+            </div>
+            <div class="relative h-32 rounded overflow-hidden flex flex-col justify-end p-3 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="relative z-10"><p class="font-bold text-xs">Alchemist</p><p class="text-gray-300 text-[10px]">Copenhagen</p></div>
+            </div>
+            <div class="relative h-32 rounded overflow-hidden flex flex-col justify-end p-3 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=300&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="relative z-10"><p class="font-bold text-xs">Andalusia</p><p class="text-gray-300 text-[10px]">32 restaurants</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Guides -->
+    <section class="px-8 py-12 max-w-6xl mx-auto">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-serif">City Guides</h2>
+            <a href="#" class="text-xs text-gray-500 hover:underline">View all our guides</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Roma -->
+            <div class="relative h-64 rounded overflow-hidden flex flex-col justify-end p-4 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="relative z-10"><h3 class="font-bold text-lg">Roma</h3><p class="text-xs text-gray-300">100 restaurants</p></div>
+            </div>
+            <!-- Barcelona -->
+            <div class="relative h-64 rounded overflow-hidden flex flex-col justify-end p-4 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=600&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="relative z-10"><h3 class="font-bold text-lg">Barcelona</h3><p class="text-xs text-gray-300">100 restaurants</p></div>
+            </div>
+            <!-- Lisbona -->
+            <div class="relative h-64 rounded overflow-hidden flex flex-col justify-end p-4 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1585208798174-6ed3c60fca68?auto=format&fit=crop&w=600&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="relative z-10"><h3 class="font-bold text-lg">Lisbona</h3><p class="text-xs text-gray-300">100 restaurants</p></div>
+            </div>
+            <!-- Santorini -->
+            <div class="relative h-64 rounded overflow-hidden flex flex-col justify-end p-4 text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80')">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="relative z-10"><h3 class="font-bold text-lg">Santorini</h3><p class="text-xs text-gray-300">100 restaurants</p></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
